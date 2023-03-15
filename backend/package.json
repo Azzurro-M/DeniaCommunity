@@ -1,0 +1,20 @@
+{
+  "name": "deniacommunity",
+  "version": "1.0.0",
+  "description": "denia community app",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.1",
+    "nodemon": "^2.0.21"
+  }
+}
