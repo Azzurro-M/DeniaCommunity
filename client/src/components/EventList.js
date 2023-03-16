@@ -24,7 +24,7 @@ export const EventList = () => {
 
   return (
     <div className="event-list">
-      <h1>DENIA COMMUNITY</h1>
+      <h1>DENIA COMMUNITY BOARD</h1>
       <h3>Create your Event or Join one now! </h3>
       <ul>
         {events.map((event) => (
