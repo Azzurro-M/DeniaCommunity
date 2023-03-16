@@ -40,7 +40,7 @@ export const CreateEvent = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">Event Name:</label>
         <input
           type="text"
           id="name"

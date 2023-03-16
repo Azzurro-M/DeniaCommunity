@@ -32,6 +32,7 @@ const createEvent = async (req, res) => {
       time: req.body.time,
       location: req.body.location,
       creator: req.body.creator,
+      contact: req.body.contact,
     });
     const savedEvent = await event.save();
     res.status(201).json(savedEvent);
@@ -48,8 +49,11 @@ const updateEvent = async (req, res) => {
       {
         name: req.body.name,
         description: req.body.description,
-        datetime: req.body.datetime,
+        date: req.body.date,
+        time: req.body.time,
+        location: req.body.location,
         creator: req.body.creator,
+        contact: req.body.contact,
       },
       { new: true }
     );
