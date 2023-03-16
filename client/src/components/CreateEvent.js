@@ -38,7 +38,7 @@ export const CreateEvent = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="create-form" onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Event Name:</label>
         <input
