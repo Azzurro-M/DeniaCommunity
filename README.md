@@ -17,13 +17,14 @@ The app also uses an .env file to hide sensitive data that could be stolen.
 Features
 The app currently has the following features:
 
-Create, read, update, and delete events
 Simple community board for a local town
+Back End
+Create, read, update, and delete events
+
 Front End
 The front end of the app includes two components:
-
-Event List
-Create Event
+-Event List
+-Create Event
 
 Contributing
 This app is currently in the first stage of development, and contributions are welcome. Feel free to submit a pull request or open an issue if you find any bugs or have suggestions for improvements.
