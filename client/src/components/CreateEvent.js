@@ -12,7 +12,7 @@ export const CreateEvent = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // You can use fetch or axios to make a POST request to your backend
+
     fetch("http://localhost:5000/api/event/new", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
