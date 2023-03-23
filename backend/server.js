@@ -19,9 +19,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(errorHandler);
-app.use(invalidPathHandler);
-
 app.use("/api/event", require("./routes/eventRoutes.js"));
 app.use("/api/user", require("./routes/userRoutes.js"));
 
@@ -67,6 +64,9 @@ app.post("/api/user/resetpassword", async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 });
+
+app.use(errorHandler);
+app.use(invalidPathHandler);
 
 app.listen(PORT, () => {
   connectDB();

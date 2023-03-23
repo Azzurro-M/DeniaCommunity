@@ -12,6 +12,7 @@ const errorHandler = (err, req, res, next) => {
 };
 
 const invalidPathHandler = (req, res, next) => {
+  console.log(req.path);
   res.status(404).send("Invalid path");
 };
 

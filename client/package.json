@@ -17,7 +17,6 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "test": "next test",
     "dev": "next dev"
   },
   "eslintConfig": {
@@ -37,5 +36,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "type": "module"
 }
