@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { CreateEvent } from "../components/createEvent";
 import { EventList } from "../components/eventList";
 // import Image from 'next/image'
 // import { Inter } from '@next/font/google'
@@ -16,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <EventList />
-      Hello World
+      <CreateEvent />
     </>
   );
 }

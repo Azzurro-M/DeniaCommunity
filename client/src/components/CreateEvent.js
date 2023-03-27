@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../components/css/create.css";
+// import "../styles/create.css";
 
 export const CreateEvent = () => {
   const [name, setName] = useState("");

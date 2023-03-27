@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/denia\ town.jpeg");
+  background-image: url("../styles/images/denia\ town.jpeg");
   background-position: center;
 }
 
@@ -80,6 +80,7 @@ body {
   padding: 10px 20px;
   margin-top: 10px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 /* Responsive design for mobile */
