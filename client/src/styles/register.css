@@ -8,12 +8,11 @@ body {
 .register-form {
   max-width: 400px;
   width: 100%;
-  margin: 100px auto;
+  margin: auto;
   padding: 20px;
   border: 1px solid white;
   border-radius: 20px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.576);
 }
 
 .register-form label {
@@ -21,6 +20,7 @@ body {
   margin-bottom: 30px;
   font-size: 20px;
   display: block;
+  letter-spacing: 3px;
 }
 
 .register-form input {
