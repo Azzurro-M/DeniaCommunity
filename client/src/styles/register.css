@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: rgb(2, 151, 251);
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
 
 .register-form {
@@ -11,7 +12,7 @@ body {
   margin: auto;
   padding: 20px;
   border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 5px;
   text-align: center;
 }
 
@@ -37,6 +38,13 @@ body {
   font-size: 1rem;
   margin: 10px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
   align-items: center;
+}
+
+.already-member {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: white;
 }

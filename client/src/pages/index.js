@@ -1,7 +1,8 @@
 import Head from "next/head";
-import { CreateEvent } from "../components/createEvent";
-import { EventList } from "../components/eventList";
+import { CreateEvent } from "../components/CreateEvent";
+import { EventList } from "../components/EventList";
 import { Title } from "../components/Title";
+
 // import Image from 'next/image'
 // import { Inter } from '@next/font/google'
 // import styles from '@/styles/Home.module.css'

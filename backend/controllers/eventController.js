@@ -12,7 +12,7 @@ const getAllEvents = async (req, res) => {
 
 const getEventById = async (req, res) => {
   try {
-    const event = await Event.findById(req.params.id);
+    const event = await Event.findById(req.params.id).populate("attendees");
     if (!event) {
       return res.status(404).json({ message: "Event not found" });
     }
@@ -33,6 +33,7 @@ const createEvent = async (req, res) => {
       location: req.body.location,
       creator: req.body.creator,
       contact: req.body.contact,
+      attendees: req.body.attendees,
     });
     const savedEvent = await event.save();
     res.status(201).json(savedEvent);

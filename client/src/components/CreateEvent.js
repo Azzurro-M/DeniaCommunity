@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { Attendees } from "./Attendees";
 // import "../styles/create.css";
 
 export const CreateEvent = () => {
@@ -9,6 +10,7 @@ export const CreateEvent = () => {
   const [location, setLocation] = useState("");
   const [creator, setCreator] = useState("");
   const [contact, setContact] = useState("");
+  const [attendees, setAttendees] = useState([]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -24,17 +26,22 @@ export const CreateEvent = () => {
         location,
         creator,
         contact,
+        attendees,
       }),
     })
       .then((response) => response.json())
       .then((data) => {
         console.log("Event created:", data);
-        // You can redirect to the newly created event's page or update your events list
+        // TODO redirect to the newly created event's page or update your events list
       })
       .catch((error) => {
         console.error("Error creating event:", error);
-        // You can display an error message to the user
+        // TODO display an error message to the user
       });
+
+    // const handleAddAttendee = (newAttendee) => {
+    //   setAttendees([...attendees, newAttendee]);
+    // };
   };
 
   return (
@@ -109,6 +116,7 @@ export const CreateEvent = () => {
         />
       </div>
       <button type="submit">Create Event</button>
+      {/* <Attendees onAddAttendee={handleAddAttendee} /> */}
     </form>
   );
 };

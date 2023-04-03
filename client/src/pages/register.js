@@ -59,6 +59,9 @@ export default function register() {
           <p>{message}</p>
           <div></div>
         </form>
+        <div className="already-member">
+          <link href="/login">Already a member?</link>
+        </div>
       </div>
     </>
   );
