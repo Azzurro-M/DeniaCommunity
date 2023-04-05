@@ -4,21 +4,9 @@ import { EventList } from "../components/EventList";
 import { Title } from "../components/Title";
 import { useRouter } from "next/router";
 import React from "react";
-import {
-  AuthContext,
-  AuthProvider,
-  isUserAuthenticated,
-} from "../context/auth-context";
 
 export default function Home() {
   const router = useRouter();
-  const authContext = React.useContext(AuthContext);
-  React.useEffect(() => {
-    // checks if the user is authenticated
-    authContext.isUserAuthenticated()
-      ? router.push("/")
-      : router.push("/login");
-  }, []);
 
   return (
     <>
