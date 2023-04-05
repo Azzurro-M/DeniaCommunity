@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export const emailReset = () => {
+export default function emailReset() {
   const [email, setEmail] = useState("");
   const [resetToken, setResetToken] = "";
 
@@ -41,7 +41,7 @@ export const emailReset = () => {
   return (
     <>
       <form className="login-form" onSubmit={handleSubmit}>
-        <h2> Request your Reset Password Link!</h2>
+        <h2> Confirm your email</h2>
         <label>
           Email:
           <input
@@ -55,4 +55,4 @@ export const emailReset = () => {
       </form>
     </>
   );
-};
+}

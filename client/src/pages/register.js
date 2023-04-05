@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import { Title } from "../components/Title";
+import Link from "next/link";
 
 export default function register() {
   const [name, setName] = useState("");
@@ -60,7 +61,9 @@ export default function register() {
           <div></div>
         </form>
         <div className="already-member">
-          <link href="/login">Already a member?</link>
+          <Link className="already-member" href="/login">
+            Already a member?
+          </Link>
         </div>
       </div>
     </>

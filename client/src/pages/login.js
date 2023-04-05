@@ -37,7 +37,7 @@ export default function login() {
 
   const handleResetPassword = async (event) => {
     event.preventDefault();
-    router.push("/EmailReset");
+    router.push("/emailReset");
   };
 
   return (
@@ -62,11 +62,11 @@ export default function login() {
           />
         </label>
         <br />
-        <button type="submit">Log in</button>
-        <button className="reset" onClick={handleResetPassword}>
-          Reset Password
-        </button>
+        <button className="submit" type="submit">Log in</button>
       </form>
+      <div className="reset">
+        <button onClick={handleResetPassword}>Reset Password</button>
+      </div>
     </>
   );
 }

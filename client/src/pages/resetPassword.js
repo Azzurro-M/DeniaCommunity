@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+// import { useParams } from "next/navigation";
 
-export const resetPassword = () => {
+export default function resetPassword() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [resetToken, setResetToken] = useState("");
-  const { token } = useParams();
+  const [token, setToken] = useState(null);
   const router = useRouter();
+
+  useEffect(() => {
+    const token = router?.query?.token;
+    console.log("token :>> ", token);
+    token && setToken(token);
+  }, [router.isReady]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -28,7 +35,7 @@ export const resetPassword = () => {
     if (response.ok && data.success) {
       // Redirect to the login page
       alert("Password reset successful. Please login with your new password.");
-      router.push("/Login");
+      router.push("/login");
     } else {
       alert("Password reset failed. Please try again.");
     }
@@ -60,4 +67,4 @@ export const resetPassword = () => {
       </form>
     </>
   );
-};
+}

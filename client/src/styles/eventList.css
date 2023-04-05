@@ -1,4 +1,11 @@
 /* Main container */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(2, 151, 251);
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 40%);
+}
+
 .event-list {
   padding: 20px;
   font-family: Arial, sans-serif;
